@@ -1,13 +1,12 @@
 # Deep flat: strategy name
 
-* Converts a nested array into a single array with no nesting
+- Converts a nested array into a single array with no nesting
 
 ## Strategy
 
 The function takes an array as input, defaulting to an empty array if no array
-is provided.
-It then uses the reduce method to iterate over the elements of the array
-and flatten it.
+is provided. It then uses the reduce method to iterate over the elements of the
+array and flatten it.
 
 ## Implementation
 
@@ -38,16 +37,14 @@ export const deepFlat = (array = []) => {
 
 ## Use Cases
 
->Case 1: Flattening a nested array
+> Case 1: Flattening a nested array
 
 ```javascript
-
 const nestedArray = [1, [2, [3, 4], 5], 6];
 console.log(deepFlat(nestedArray)); // Output: [1, 2, 3, 4, 5, 6]
-
 ```
 
->Case 2: Handling an empty array
+> Case 2: Handling an empty array
 
 ```javascript
 
@@ -58,10 +55,8 @@ console.log(deepFlat(emptyArray)); // Output: []
 ```
 
 ```javascript
-
 const deepNestedArray = [1, [2, [3, [4, [5]]]]];
 console.log(deepFlat(deepNestedArray)); // Output: [1, 2, 3, 4, 5]
-
 ```
 
 ## Inspiration

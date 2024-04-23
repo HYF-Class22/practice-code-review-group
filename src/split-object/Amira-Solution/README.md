@@ -13,8 +13,8 @@ to use an easy one-line function code
 
 ## Implementation
 
-Using `Object.entries()`
-method to returns an array containing key-value pairs found directly in the object.
+Using `Object.entries()` method to returns an array containing key-value pairs
+found directly in the object.
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries>
 
@@ -22,19 +22,17 @@ method to returns an array containing key-value pairs found directly in the obje
 
 ## Use Cases
 
-- You have an object list of Group `Name and Gender`
-and you want to log its key-value pairs.
-Splitting this object into an array of key-value pairs
-makes it easier to log each pair individually
+- You have an object list of Group `Name and Gender` and you want to log its
+  key-value pairs. Splitting this object into an array of key-value pairs makes
+  it easier to log each pair individually
 
->here is the code of this case:
+> here is the code of this case:
 
 ```js
-
 const obj = {
-  'Amira': 'F',
-  'Ashraf': 'M',
-  'Youns': 'M'
+  Amira: 'F',
+  Ashraf: 'M',
+  Youns: 'M',
 };
 
 const splitPairs = (obj) => {
@@ -46,12 +44,9 @@ const keyValueArray = splitPairs(obj);
 keyValueArray.forEach(([key, value]) => {
   console.log(`Name: ${key}, Gender: ${value}`);
 });
-
-
-
 ```
 
->This code will return:
+> This code will return:
 
 ```js
 Name: Amira, Gender: F

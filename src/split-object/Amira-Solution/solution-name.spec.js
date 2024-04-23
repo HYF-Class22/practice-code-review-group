@@ -4,7 +4,7 @@ describe('split key and value pairs in array', () => {
   describe('object with one key', () => {
     it('should split an object with one key and one value into an array with one pair', () => {
       const expected = [['1', 'Amira']];
-      const received = splitPairs({ '1': 'Amira' });
+      const received = splitPairs({ 1: 'Amira' });
       expect(received).toEqual(expected);
     });
 
@@ -13,7 +13,7 @@ describe('split key and value pairs in array', () => {
         ['1', 'Amira'],
         ['2', 'Ashraf'],
       ];
-      const received = splitPairs({ '1': 'Amira', '2': 'Ashraf' });
+      const received = splitPairs({ 1: 'Amira', 2: 'Ashraf' });
       expect(received).toEqual(expected);
     });
 
@@ -23,7 +23,7 @@ describe('split key and value pairs in array', () => {
         ['2', 'Ashraf'],
         ['3', 'Youns'],
       ];
-      const received = splitPairs({ '1': 'Amira', '2': 'Ashraf', '3': 'Youns' });
+      const received = splitPairs({ 1: 'Amira', 2: 'Ashraf', 3: 'Youns' });
       expect(received).toEqual(expected);
     });
 
@@ -35,10 +35,10 @@ describe('split key and value pairs in array', () => {
         ['4', 'Ala'],
       ];
       const received = splitPairs({
-        '1': 'Amira',
-        '2': 'Ashraf',
-        '3': 'Youns',
-        '4': 'Ala',
+        1: 'Amira',
+        2: 'Ashraf',
+        3: 'Youns',
+        4: 'Ala',
       });
       expect(received).toEqual(expected);
     });

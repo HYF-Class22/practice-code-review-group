@@ -1,4 +1,4 @@
-import { deepFlat } from './deepFlat.js';
+import { deepFlat } from './deep-flat.js';
 
 describe('Converts a nested array into a single array with no nesting', () => {
   it('an empty array should return an empty array', () => {
